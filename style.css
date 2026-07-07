@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.maincontainer{
+    border: 1px solid burlywood;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+.top input{
+    height: 30px;
+    width: 100%;
+}
+.top button{
+    height: 30px;
+    padding: 0px 10px;
+}
+.taskcontainer{
+    padding: 10px;
+    border: 1px solid bisque;
+    flex: 1;
+}
+.taskcontainer input{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+.tasks{
+    border: 1px solid black;
+    padding: 4px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.452)
+}
+.task{
+    padding: 4px;
+    border: 1px solid blanchedalmond;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.404);
+}
+.task p{
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+.whattodo{
+    display: flex;
+    gap: 6px;
+    height:25px;
+}
+.check{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: relative;
+}
+.tick{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+}
+.tick{
+    cursor: hover;
+}
